@@ -24,9 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
-         
-          pip install -r requirements.txt
       # Runs a single command using the runners shell
       - name: set-up Python 3.9
         uses: actions/setup-python@v3
@@ -42,10 +39,8 @@ jobs:
       - name: Jupyter notebook run
         run: jupyter execute Heltramairquality.ipynb
         shell: bash
-        
-      #- name: jupyter run
-        env:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          username: github-actions
-       
-          
+      #env
+      env: 
+        REPO_KEY:${{secrets.GITHUB_TOKEN}}
+        username: github-cactions
+
