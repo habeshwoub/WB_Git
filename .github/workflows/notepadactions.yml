@@ -38,6 +38,6 @@ jobs:
           python -m pip install --upgrade pip -r requirements.txt
       # Build the book
       - name: Jupyter notebook run
-        run: jupyter execute Helsinki air quality.ipynb
-        shell: bash 
+        run: jupyter execute Heltramairquality.ipynb
+        shell: bash
       
