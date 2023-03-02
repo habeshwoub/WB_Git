@@ -1,8 +1,4 @@
 jupyter
-<<<<<<< HEAD
-=======
-nbclient
->>>>>>> origin
 jupyter
 pandas
 numpy
