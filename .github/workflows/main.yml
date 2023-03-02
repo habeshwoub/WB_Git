@@ -30,16 +30,12 @@ jobs:
         uses: actions/setup-python@v3
         with: 
          python-version: 3.7
-      
-    
+         
       # Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip -r requirements.txt
-      - name: Build notebook
-        run: |
-          jupyter-book build  .
-        
+             
       - name: run notebook
         run: jupyter execute Heltramairquality.ipynb
         shell: bash
