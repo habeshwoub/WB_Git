@@ -3,6 +3,7 @@ jupyter
 =======
 nbclient
 >>>>>>> origin
+jupyter
 pandas
 numpy
 matplotlib
