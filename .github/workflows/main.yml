@@ -43,4 +43,4 @@ jobs:
       - name: run notebook
         run: jupyter execute Heltramairquality.ipynb
         shell: bash
->>>>>>> origin:.github/workflows/main.yml
+
