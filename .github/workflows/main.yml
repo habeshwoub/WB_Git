@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Automate workflow
 
 # Controls when the workflow will run
 on:
@@ -24,7 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-<<<<<<< HEAD:.github/workflows/notepad actions.yml
 
       # Runs a single command using the runners shell
       - name: set-up Python 3.7
@@ -40,19 +39,8 @@ jobs:
       - name: Build notebook
         run: |
           jupyter-book build  .
-          
-      
-      
-=======
-        with: 
-          python-version: 3.9
-
-      # Install dependencies
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-      # Build the notebook
-      - name: Jupyter notebook run
+        
+      - name: run notebook
         run: jupyter execute Heltramairquality.ipynb
         shell: bash
 >>>>>>> origin:.github/workflows/main.yml
